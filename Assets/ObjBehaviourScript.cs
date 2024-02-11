@@ -1,5 +1,7 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class ObjBehaviourScript : MonoBehaviour
 {
@@ -12,6 +14,9 @@ public class ObjBehaviourScript : MonoBehaviour
     public Transform groundCheck; // 地面检测点
     public float checkRadius = 0.5f; // 检测半径
     public LayerMask groundLayer; // 地面图层
+
+    public Image controlInvertProgressBar; // 控制反转进度条
+
 
     void Start()
     {
@@ -51,12 +56,55 @@ public class ObjBehaviourScript : MonoBehaviour
     //    }
     //}
 
+    //IEnumerator InvertControlsTemporary(float duration)  //没有进度条功能
+    //{
+    //    controlsInverted = !controlsInverted;
+    //    yield return new WaitForSeconds(duration);
+    //    controlsInverted = !controlsInverted;
+    //}
+
     IEnumerator InvertControlsTemporary(float duration)
     {
-        controlsInverted = !controlsInverted;
-        yield return new WaitForSeconds(duration);
-        controlsInverted = !controlsInverted;
+        controlsInverted = true;
+        Debug.Log("Controls inverted.");
+        // 显示进度条并初始化为满
+        if (controlInvertProgressBar != null)
+        {
+            controlInvertProgressBar.gameObject.SetActive(true);
+            controlInvertProgressBar.fillAmount = 1.0f;
+            Debug.Log("Progress bar shown.");
+        }
+        else
+        {
+            Debug.Log("Progress bar reference is null.");
+        }
+
+        float timePassed = 0;
+        while (timePassed < duration)
+        {
+            // 更新已过时间
+            timePassed += Time.deltaTime;
+            // 根据已过时间更新进度条
+            if (controlInvertProgressBar != null)
+            {
+                controlInvertProgressBar.fillAmount = 1.0f - (timePassed / duration);
+                Debug.Log("Progress bar updated: " + controlInvertProgressBar.fillAmount.ToString());
+            }
+            yield return null;
+        }
+
+        controlsInverted = false;
+        Debug.Log("Controls reverted to normal.");
+
+        // 隐藏进度条
+        if (controlInvertProgressBar != null)
+        {
+            controlInvertProgressBar.gameObject.SetActive(false);
+            Debug.Log("Progress bar hidden.");
+        }
     }
+
+
 
     // 这个方法是public的，允许外部调用以启动控制颠倒的协程
     public void StartInvertControlsTemporary(float duration)
