@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{18158FB2-B8F0-7C5B-5C41-C20449B853A0}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MovingObstacle.cs">
+    <Files>
+      <File FileName="Assets/ObjBehaviourScript.cs" Line="75" Column="1" />
+      <File FileName="Assets/SwitchActivation.cs" Line="46" Column="1" />
+      <File FileName="Assets/CoinScript.cs" Line="18" Column="1" />
+      <File FileName="Assets/MovingObstacle.cs" Line="17" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PairPrototype" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="MovingObstacle.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="240d845c-f18f-45e0-862b-445b39eaf9d5" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

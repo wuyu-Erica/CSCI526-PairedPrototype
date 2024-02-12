@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{047D6E3F-F7AD-8E11-FAF3-70AF083323F0}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CoinScript.cs">
+    <Files>
+      <File FileName="Assets/ObjBehaviourScript.cs" Line="71" Column="31" />
+      <File FileName="Assets/SwitchActivation.cs" Line="8" Column="35" />
+      <File FileName="Assets/CoinScript.cs" Line="7" Column="39" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CSCI526-PairedPrototype" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="CoinScript.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="240d845c-f18f-45e0-862b-445b39eaf9d5" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
