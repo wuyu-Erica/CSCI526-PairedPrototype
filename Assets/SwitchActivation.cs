@@ -5,7 +5,7 @@ using UnityEngine;
 public class SwitchActivation : MonoBehaviour
 {
     public GameObject[] targetGrounds; // 现在是一个数组
-    public int maxTriggerCount = 3; // 最大触发次数限制
+    public int maxTriggerCount = 1; // 最大触发次数限制
     private int currentTriggerCount = 0; // 当前触发次数
 
     void OnTriggerEnter2D(Collider2D other)
